@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de código</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+</head>
+<body class="principal">
+        <header>
+            <h1><img src="./image/logo.svg" alt="logo alura"></h1>
+        </header>
+          
+    <main>      
+        <section class="area-texto">
+            <div class="texto">
+              <textarea id="texto" name="caixatexto" value="" rows="4" cols="33" maxlength="140" placeholder="Digite o texto aqui!"></textarea>
+            </div>
+      
+            <div class="obs">
+              <img src="./image/i.svg" alt="info">
+              <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            
+            <div class="botoes">
+              <button id="botao-cripto" onclick="criptografar()" type="text" name="criptografar">Criptografar</button>
+              <button id="botao-descripto" onclick="descriptografar()" type="text" name="descriptografar">Descriptografar</button>
+            </div>
+          </section>
+      
+          <section class="barra-lateral">
+            <div class="info">
+              <div class="bloco">
+                <img id="imagem" src="./image/erro.svg" alt="nenhuma mensagem encontrada">
+                <h3 id="campo">Nenhuma mensagem encontrada</h3>
+                <p id="texto-trocar">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p id="sem-caracteres-especiais">O texto não deve conter letras maiúsculas, acentos e caracteres especiais.</p>
+              </div>
+              <div id="adicionar-botao" style="display: none;">
+                <button id="copiar" onclick="copiarTexto()" type="text" name="copiar"> Copiar </button>
+              </div>
+            </div>
+          </section>
+     </main>
+    <footer>
+        <p>@2024 Desenvolvido por Paulo Henrique! todos os direitos reservados</p>
+    </footer>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
